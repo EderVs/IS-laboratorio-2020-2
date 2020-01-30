@@ -7,3 +7,4 @@
 - Navarrete Puebla Alexis | alexisnpfc@ciencias.unam.mx      
 - Rosado Cabrera Diego | rocadie9615@ciencias.unam.mx
 - López Soto Ramses Antonio | ramseslopez99@ciencias.unam.mx
+- Lopez Garcia Jose Gilberto | stecaub_x90@ciencias.unam.mx
