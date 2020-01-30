@@ -6,3 +6,4 @@
 - Hernandez Ferreiro Enrique Ehecatl | linkhernandez@ciencias.unam.mx
 - Navarrete Puebla Alexis | alexisnpfc@ciencias.unam.mx      
 - Rosado Cabrera Diego | rocadie9615@ciencias.unam.mx
+- López Soto Ramses Antonio | ramseslopez99@ciencias.unam.mx
