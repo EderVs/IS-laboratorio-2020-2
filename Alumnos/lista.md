@@ -9,3 +9,4 @@
 - López Soto Ramses Antonio | ramseslopez99@ciencias.unam.mx
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
 - Lopez Garcia Jose Gilberto | stecaub_x90@ciencias.unam.mx
+- Millán Pimentel Oscar Fernando | o_fernando_m_p@ciencias.unam.mx
