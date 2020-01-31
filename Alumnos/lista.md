@@ -11,3 +11,4 @@
 - Millán Pimentel Oscar Fernando | o_fernando_m_p@ciencias.unam.mx
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
 - Amaya López Dulce Fernanda | amaya.221@ciencias.unam.mx
+- Sara Doris Montes Incin | isara22@ciencias.unam.mx
