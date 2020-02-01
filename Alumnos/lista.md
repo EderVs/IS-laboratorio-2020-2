@@ -13,3 +13,4 @@
 - Amaya López Dulce Fernanda | amaya.221@ciencias.unam.mx
 - Sara Doris Montes Incin | isara22@ciencias.unam.mx
 - Altamirano Vázquez Jesús Fernando | jfaltamiranov@ciencias.unam.mx
+- Lechuga Martínez José Eduardo | joselechuga194@ciencias.unam.mx
