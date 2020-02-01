@@ -12,3 +12,4 @@
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
 - Amaya López Dulce Fernanda | amaya.221@ciencias.unam.mx
 - Sara Doris Montes Incin | isara22@ciencias.unam.mx
+- Altamirano Vázquez Jesús Fernando | jfaltamiranov@ciencias.unam.mx
