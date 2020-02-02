@@ -15,3 +15,4 @@
 - Lugo Cano Daniel | danylugo@ciencias.unam.mx
 - Altamirano Vázquez Jesús Fernando | jfaltamiranov@ciencias.unam.mx
 - Lechuga Martínez José Eduardo | joselechuga194@ciencias.unam.mx
+- Coronel Ruiz Aldair | aldaircr@ciencias.unam.mx
