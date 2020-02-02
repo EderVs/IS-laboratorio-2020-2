@@ -16,3 +16,4 @@
 - Lechuga Martínez José Eduardo | joselechuga194@ciencias.unam.mx
 - Coronel Ruiz Aldair | aldaircr@ciencias.unam.mx
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
+- Gerardo Emiliano Figueroa Sandoval | efs_070@ciencias.unam.mx
