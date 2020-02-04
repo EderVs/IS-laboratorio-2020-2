@@ -18,3 +18,4 @@
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
 - Gerardo Emiliano Figueroa Sandoval | efs_070@ciencias.unam.mx
 - Miguel Ángel Escamilla Monroy | miguelescamilla@ciencias.unam.mx
+- Eric Sanchez Sarmiento | Eric-Sanchez-Sarmiento@ciencias.unam.mx
