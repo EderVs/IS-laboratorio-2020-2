@@ -20,3 +20,5 @@
 - Miguel Ángel Escamilla Monroy | miguelescamilla@ciencias.unam.mx
 - Eric Sanchez Sarmiento | Eric-Sanchez-Sarmiento@ciencias.unam.mx
 - Héctor Ernesto Gutiérrez Velázquez | hgv@ciencias.unam.mx
+- Mario Navarrete Baltazar | marionb@ciencias.unam.mx
+
