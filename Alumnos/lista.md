@@ -19,3 +19,4 @@
 - Gerardo Emiliano Figueroa Sandoval | efs_070@ciencias.unam.mx
 - Miguel Ángel Escamilla Monroy | miguelescamilla@ciencias.unam.mx
 - Eric Sanchez Sarmiento | Eric-Sanchez-Sarmiento@ciencias.unam.mx
+- Héctor Ernesto Gutiérrez Velázquez | hgv@ciencias.unam.mx
