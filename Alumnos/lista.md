@@ -21,4 +21,4 @@
 - Eric Sanchez Sarmiento | Eric-Sanchez-Sarmiento@ciencias.unam.mx
 - Héctor Ernesto Gutiérrez Velázquez | hgv@ciencias.unam.mx
 - Mario Navarrete Baltazar | marionb@ciencias.unam.mx
-
+- Careaga Carrillo Juan Manuel | jmcareaga@ciencias.unam.mx
