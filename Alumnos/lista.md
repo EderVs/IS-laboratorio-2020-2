@@ -23,4 +23,4 @@
 - Héctor Ernesto Gutiérrez Velázquez | hgv@ciencias.unam.mx
 - Mario Navarrete Baltazar | marionb@ciencias.unam.mx
 - Díaz Gómez Silvia | silvinha@ciencias.unam.mx
-
+- Mauricio Chávez Olea | mauriciochavez@ciencias.unam.mx
