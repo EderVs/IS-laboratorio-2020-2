@@ -26,3 +26,4 @@
 - Mauricio Chávez Olea | mauriciochavez@ciencias.unam.mx
 - Daniel Hernandez Hernandez | cripto357@ciencias.unam.mx
 - María Belén Ticona Oquendo | mticona@dc.uba.ar
+
