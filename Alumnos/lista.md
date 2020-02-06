@@ -24,6 +24,6 @@
 - Mario Navarrete Baltazar | marionb@ciencias.unam.mx
 - Díaz Gómez Silvia | silvinha@ciencias.unam.mx
 - Mauricio Chávez Olea | mauriciochavez@ciencias.unam.mx
-- Daniel Hernandez Hernandez | cripto357@ciencias.unam.mx
+- Daniel Hernandez Hernandez  cripto357@ciencias.unam.mx
 - María Belén Ticona Oquendo | mticona@dc.uba.ar
 
