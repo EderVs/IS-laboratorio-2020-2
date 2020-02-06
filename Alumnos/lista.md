@@ -27,4 +27,4 @@
 - Daniel Hernandez Hernandez  cripto357@ciencias.unam.mx
 - María Belén Ticona Oquendo | mticona@dc.uba.ar
 - David Alberto Martinez Figueroa | damf@ciencias.unam.mx
-
+- Rodrigo Alvar Reyna Trejo | roalretre@ciencias.unam.mx
