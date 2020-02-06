@@ -18,6 +18,7 @@ class Animal:
         self.breathe()
     
 class Person(Animal):
+    """ Represents a person with a job. """
     job_office = ""
 
     def __init__(self, age, job_office="Home"):
