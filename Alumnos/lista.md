@@ -29,4 +29,5 @@
 - David Alberto Martinez Figueroa | damf@ciencias.unam.mx
 - Rodrigo Alvar Reyna Trejo | roalretre@ciencias.unam.mx
 - Careaga Carrillo Juan Manuel | jmcareaga@ciencias.unam.mx
+- Sainz Takata Izumi María | sainz@ciencias.unam.mx
 
