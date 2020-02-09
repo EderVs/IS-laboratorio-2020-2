@@ -30,4 +30,4 @@
 - Rodrigo Alvar Reyna Trejo | roalretre@ciencias.unam.mx
 - Careaga Carrillo Juan Manuel | jmcareaga@ciencias.unam.mx
 - Sainz Takata Izumi María | sainz@ciencias.unam.mx
-
+- Víctor Ulises López Arias | ulises.lopez@ciencias.unam.mx
