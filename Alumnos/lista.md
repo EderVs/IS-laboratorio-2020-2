@@ -1,4 +1,4 @@
-# Lista de Alumnos
+﻿# Lista de Alumnos
 
 - Arenas Ayala Ramón | ramon_cmk@ciencias.unam.mx
 - Eduardo Eder Vázquez Salcedo | eder.vs@ciencias.unam.mx
@@ -32,3 +32,4 @@
 - Careaga Carrillo Juan Manuel | jmcareaga@ciencias.unam.mx
 - Sainz Takata Izumi María | sainz@ciencias.unam.mx
 - Víctor Ulises López Arias | ulises.lopez@ciencias.unam.mx
+- Pérez Villanueva Ricardo Enrique | repv1999@ciencias.unam.mx
