@@ -1,5 +1,6 @@
 # Lista de Alumnos
 
+- Arenas Ayala Ramón | ramon_cmk@ciencias.unam.mx
 - Eduardo Eder Vázquez Salcedo | eder.vs@ciencias.unam.mx
 - Narciso Isaac Eugenio Aceves | isaacn97@ciencias.unam.mx
 - Emily Martinez Monroy | emily_martinez@ciencias.unam.mx
@@ -17,3 +18,17 @@
 - Coronel Ruiz Aldair | aldaircr@ciencias.unam.mx
 - Emmanuel Cruz Hernández | emmanuel_cruzh@ciencias.unam.mx
 - Gerardo Emiliano Figueroa Sandoval | efs_070@ciencias.unam.mx
+- Miguel Ángel Escamilla Monroy | miguelescamilla@ciencias.unam.mx
+- Eric Sanchez Sarmiento | Eric-Sanchez-Sarmiento@ciencias.unam.mx
+- Héctor Ernesto Gutiérrez Velázquez | hgv@ciencias.unam.mx
+- Mario Navarrete Baltazar | marionb@ciencias.unam.mx
+- Díaz Gómez Silvia | silvinha@ciencias.unam.mx
+- Mauricio Chávez Olea | mauriciochavez@ciencias.unam.mx
+- Jesús Haans López Hernández | jesuslopez@ciencias.unam.mx
+- Daniel Hernandez Hernandez  cripto357@ciencias.unam.mx
+- María Belén Ticona Oquendo | mticona@dc.uba.ar
+- David Alberto Martinez Figueroa | damf@ciencias.unam.mx
+- Rodrigo Alvar Reyna Trejo | roalretre@ciencias.unam.mx
+- Careaga Carrillo Juan Manuel | jmcareaga@ciencias.unam.mx
+- Sainz Takata Izumi María | sainz@ciencias.unam.mx
+- Víctor Ulises López Arias | ulises.lopez@ciencias.unam.mx
