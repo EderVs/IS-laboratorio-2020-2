@@ -1,4 +1,5 @@
 """Music Views."""
+# Django
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -13,3 +14,14 @@ def index(request):
     TODO: Show playlists.
     """
     return HttpResponse("<h1>This is the music index!<!h1>")
+
+
+def top_songs(request):
+    """Top songs.
+
+    TODO: Show songs by its popularity.
+    """
+    return HttpResponse(
+        "<head><title>Canciones populares</title></head>"
+        "<body><h1>Estas son las canciones populares:</h1></body>"
+    )
