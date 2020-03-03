@@ -1,0 +1,25 @@
+<!-- Base -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} | TuMusica</title>
+    {% load static %}
+    {% block head %}
+    {% endblock head %}
+    <link rel="stylesheet" type="text/css" href={% static 'music/base.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'music/player.css' %}>
+    {% block css %}
+    {% endblock css %}
+</head>
+<body>
+{% block body_content %}
+{% endblock body_content %}
+
+{% include 'music/player.html' %}
+
+{% block js %}
+{% endblock js %}
+</body>
+</html>
