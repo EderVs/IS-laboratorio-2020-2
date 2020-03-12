@@ -3,3 +3,5 @@
 *.swp
 .vscode
 .mypy_cache
+media/
+db.sqlite3

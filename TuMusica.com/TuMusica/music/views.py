@@ -2,6 +2,8 @@
 # Django
 from django.shortcuts import render
 from django.views import View
+# Models
+from .models import Song
 
 
 # Function-based views.
@@ -55,4 +57,13 @@ class TopSongs(View):
 
     def get(self, request):
         """GET method."""
-        return render(request, self.template)
+        songs = Song.objects.all()
+        to_play_id = request.GET.get("to_play", 1)
+        songs_to_play = Song.objects.filter(id=to_play_id)
+        if songs_to_play.count() == 0:
+            to_play = Song.objects.first()
+        else:
+            to_play = songs_to_play.first()
+
+        context = {"songs": songs, "to_play": to_play}
+        return render(request, self.template, context)

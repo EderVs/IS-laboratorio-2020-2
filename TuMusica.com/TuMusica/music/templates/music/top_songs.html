@@ -7,4 +7,11 @@
 
 {% block body_content %}
     <h1>Estas son las canciones populares:</h1>
+    
+    <ul>
+        {% for song in songs  %}
+        <li>{{song}}</li>
+        {% endfor %}
+    </ul>
+        
 {% endblock body_content %}
