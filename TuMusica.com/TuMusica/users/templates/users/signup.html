@@ -4,10 +4,7 @@
 <h1>Sign up!</h1>
 <form action="." method="POST">
     {% csrf_token %}
-    <label for="first_name">First Name:</label><input name="first_name" type="text">
-    <label for="last_name">Last Name:</label><input name="last_name" type="text">
-    <label for="email">Email:</label><input name="email" type="email">
-    <label for="password">Password:</label><input name="password" type="password">
+    {{ form }}
     <input value="Sign up" type="submit">
 </form>
 {% endblock body_content %}

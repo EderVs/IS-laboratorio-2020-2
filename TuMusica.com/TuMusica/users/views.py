@@ -15,7 +15,9 @@ class SignUp(View):
 
     def get(self, request):
         """Render sign up form."""
-        return render(request, self.template)
+        form = SignUpForm()
+        context = {"form": form}
+        return render(request, self.template, context)
 
     def post(self, request):
         """Receive and validate sign up form."""
