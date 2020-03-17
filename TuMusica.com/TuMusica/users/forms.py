@@ -9,4 +9,4 @@ class SignUpForm(forms.Form):
     first_name = forms.CharField(max_length=200)
     last_name = forms.CharField(max_length=200)
     email = forms.EmailField(max_length=200)
-    password = forms.PasswordInput()
+    password = forms.CharField(widget=forms.PasswordInput())
