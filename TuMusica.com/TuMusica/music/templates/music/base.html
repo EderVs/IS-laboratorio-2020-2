@@ -16,7 +16,15 @@
 </head>
 
 <body>
-    <a href="{% url 'music:home' %}">Index</a>
+    <header>
+        <a href="{% url 'music:home' %}">Index</a>
+        {% if user.is_authenticated %}
+        <p>Welcome, {{ user.first_name }}.</p>
+        <a href="{% url 'users:logout' %}">Logout</a>
+        {% else %}
+        <a href="{% url 'users:login' %}">Login</a> or <a href="{% url 'users:sign_up'%}">Sign Up</a>
+        {% endif %}
+    </header>
     {% block body_content %}
     {% endblock body_content %}
 

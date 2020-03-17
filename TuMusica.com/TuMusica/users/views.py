@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 # Forms
 from users.forms import SignUpForm, LoginForm
@@ -29,7 +29,7 @@ class SignUp(View):
             context = {"form": form}
             return render(request, self.template, context)
 
-        new_user = User.objects.create_user(
+        User.objects.create_user(
             username=form.cleaned_data["email"],
             email=form.cleaned_data["email"],
             password=form.cleaned_data["password"],
@@ -40,7 +40,7 @@ class SignUp(View):
 
 
 class Login(View):
-    """New User Sign Up."""
+    """User Login."""
 
     template = "users/login.html"
 
@@ -62,6 +62,17 @@ class Login(View):
             username=form.cleaned_data["username"],
             password=form.cleaned_data["password"],
         )
+        # As simple as telling django the user to login.
         login(request, user)
 
         return HttpResponse("<h1>User logged!</h1>")
+
+
+class Logout(View):
+    """Logout View."""
+
+    def get(self, request):
+        """Logout logged user."""
+        # As simple as.
+        logout(request)
+        return redirect("music:home")
