@@ -1,0 +1,21 @@
+{% extends 'music/base.html' %}
+
+{% block body_content %}
+<h1>Login</h1>
+<form action="." method="POST">
+    {% csrf_token %}
+
+    <div class="sing_up_input">
+        {{ form.username.errors }}
+        <label for="username">Email:</label>
+        {{ form.username }}
+    </div>
+    <div class="sing_up_input">
+        {{ form.password.errors }}
+        {{ form.password.label_tag }}
+        {{ form.password }}
+    </div>
+    <input value="Sign up" type="submit">
+</form>
+<a href="{% url 'users:sign_up' %}">Sign up</a>
+{% endblock body_content %}
