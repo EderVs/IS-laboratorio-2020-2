@@ -3,6 +3,9 @@
 from django.shortcuts import render
 from django.views import View
 
+# Forms
+from users.forms import SignUpForm
+
 
 class SignUp(View):
     """New User Sign Up."""
