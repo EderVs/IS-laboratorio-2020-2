@@ -1,6 +1,7 @@
 <!-- Base -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,16 @@
     {% block css %}
     {% endblock css %}
 </head>
+
 <body>
-{% block body_content %}
-{% endblock body_content %}
+    <a href="{% url 'music:home' %}">Index</a>
+    {% block body_content %}
+    {% endblock body_content %}
 
-{% include 'music/player.html' %}
+    {% include 'music/player.html' %}
 
-{% block js %}
-{% endblock js %}
+    {% block js %}
+    {% endblock js %}
 </body>
+
 </html>
