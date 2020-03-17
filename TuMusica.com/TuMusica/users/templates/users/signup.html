@@ -4,7 +4,14 @@
 <h1>Sign up!</h1>
 <form action="." method="POST">
     {% csrf_token %}
-    {{ form }}
+
+    {% for field in form %}
+    <div class="sing_up_input">
+        {{ fielf.errors }}
+        {{ field.label_tag }}
+        {{ field }}
+    </div>
+    {% endfor %}
     <input value="Sign up" type="submit">
 </form>
 {% endblock body_content %}
