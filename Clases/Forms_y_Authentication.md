@@ -102,3 +102,10 @@ La variable `user` siempre está en el contexto de cualquier template.
 Commit: <https://github.com/EderVs/IS-laboratorio-2020-2/commit/f9bd826bd8ca674186ef23dd48f3a08b53b5be3a>
 
 ¡Y ya!
+
+Recursos:
+
+- Forms: <https://docs.djangoproject.com/en/3.0/topics/forms/>
+- User: <https://docs.djangoproject.com/en/3.0/ref/contrib/auth/#django.contrib.auth.models.User>
+- Form validation: <https://docs.djangoproject.com/en/3.0/ref/forms/validation/#raising-validation-error>
+- Authentication in templates: <https://docs.djangoproject.com/en/3.0/topics/auth/default/#authentication-data-in-templates>
