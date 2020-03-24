@@ -19,14 +19,7 @@
     </ul>
 </div>
 <div class="rec-division">
-    <h2>Songs</h2>
-    <ul>
-        {% for song in songs %}
-        <li>
-            {{ song.name }}
-        </li>
-        {% endfor %}
-    </ul>
+    {% include 'music/songs.html' %}
 </div>
 <div></div>
 {% endblock body_content %}
