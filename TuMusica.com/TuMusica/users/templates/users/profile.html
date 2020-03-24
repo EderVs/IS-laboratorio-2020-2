@@ -1,0 +1,8 @@
+{% extends 'music/base.html' %}
+
+{% block body_content %}
+<h1>Profile</h1>
+<h2>{{ user.first_name }} {{user.last_name}}</h2>
+<h2>Fav songs.</h2>
+{% include 'music/songs.html' %}
+{% endblock body_content %}

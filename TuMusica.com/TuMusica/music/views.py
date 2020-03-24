@@ -81,7 +81,7 @@ class ArtistView(View):
     def get(self, request, id):
         """Show artist template."""
         artist = get_object_or_404(Artist, id=id)
-        context = {"artist": artist}
+        context = {"artist": artist, "songs": artist.songs.all()}
         return render(request, self.template, context)
 
 

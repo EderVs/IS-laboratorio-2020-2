@@ -13,19 +13,13 @@
     <link rel="stylesheet" type="text/css" href={% static 'music/css/player.css' %}>
     {% block css %}
     {% endblock css %}
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script>
-        $.ajaxSetup({
-            data: { csrfmiddlewaretoken: '{{ csrf_token }}' },
-        });
-    </script>
 </head>
 
 <body>
     <header>
         <a href="{% url 'music:home' %}">Index</a>
         {% if user.is_authenticated %}
-        <p>Welcome, {{ user.first_name }}.</p>
+        <p>Welcome, <a href="{% url 'users:profile' %}">{{ user.first_name }}</a>.</p>
         <a href="{% url 'users:logout' %}">Logout</a>
         {% else %}
         <a href="{% url 'users:login' %}">Login</a> or <a href="{% url 'users:sign_up'%}">Sign Up</a>
@@ -38,6 +32,12 @@
     {% include 'music/player.html' %}
 
     {% block js %}
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            data: { csrfmiddlewaretoken: '{{ csrf_token }}' },
+        });
+    </script>
     {% endblock js %}
 </body>
 

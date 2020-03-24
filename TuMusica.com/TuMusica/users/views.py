@@ -3,8 +3,9 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from django.http import HttpResponse
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Models
 from .models import ExtendedUser
@@ -13,7 +14,7 @@ from .models import ExtendedUser
 from users.forms import SignUpForm, LoginForm
 
 
-class SignUp(View):
+class SignUpView(View):
     """New User Sign Up."""
 
     template = "users/signup.html"
@@ -40,10 +41,10 @@ class SignUp(View):
             last_name=form.cleaned_data["last_name"],
         )
         ExtendedUser.objects.create(user=user)
-        return HttpResponse("<h1>User Created!</h1>")
+        return redirect("users:login")
 
 
-class Login(View):
+class LoginView(View):
     """User Login."""
 
     template = "users/login.html"
@@ -69,10 +70,10 @@ class Login(View):
         # As simple as telling django the user to login.
         login(request, user)
 
-        return HttpResponse("<h1>User logged!</h1>")
+        return redirect("music:home")
 
 
-class Logout(View):
+class LogoutView(View):
     """Logout View."""
 
     def get(self, request):
@@ -80,3 +81,14 @@ class Logout(View):
         # As simple as.
         logout(request)
         return redirect("music:home")
+
+
+class ProfileView(LoginRequiredMixin, View):
+    """Profile View."""
+
+    template = "users/profile.html"
+
+    def get(self, request):
+        """Display profile template."""
+        context = {"songs": request.user.extended_user.fav_songs.all()}
+        return render(request, self.template, context)
