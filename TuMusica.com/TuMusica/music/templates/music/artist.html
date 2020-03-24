@@ -1,0 +1,18 @@
+<!-- Artist -->
+{% extends 'music/base.html' %}
+
+{% load static %}
+
+{% block title %}{{ artist.name }} | Tu música{% endblock title %}
+
+{% block body_content %}
+<h1> {{artist.name}} </h1>
+<h2>Songs</h2>
+<div class="songs">
+    <ul>
+        {% for song in artist.songs.all %}
+        <li>{{song.name}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock body_content %}

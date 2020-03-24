@@ -12,6 +12,7 @@ urlpatterns = [
     #     path('', views.index, name='home'),
     #     path('top-songs', views.top_songs, name='top-songs'),
     # Class-based views
-    path("", views.Index.as_view(), name="home"),
-    path("top-songs", views.TopSongs.as_view(), name="top-songs"),
+    path("", views.IndexView.as_view(), name="home"),
+    path("top-songs", views.TopSongsView.as_view(), name="top-songs"),
+    path("artist/<int:id>", views.ArtistView.as_view(), name="artist"),
 ]

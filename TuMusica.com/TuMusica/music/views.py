@@ -4,7 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import View
 
 # Models
-from .models import Song
+from .models import Song, Artist
 
 
 # Function-based views.
@@ -31,7 +31,7 @@ def top_songs(request):
 
 
 # Class-based views.
-class Index(View):
+class IndexView(View):
     """Music index.
 
     Showing some artists, songs, albums and playlists.
@@ -48,7 +48,7 @@ class Index(View):
         return render(request, self.template)
 
 
-class TopSongs(View):
+class TopSongsView(View):
     """Top songs.
 
     TODO: Show songs by its popularity.
@@ -70,7 +70,7 @@ class TopSongs(View):
         return render(request, self.template, context)
 
 
-class Artist(View):
+class ArtistView(View):
     """Show Artist View."""
 
     template = "music/artist.html"
