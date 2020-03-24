@@ -6,5 +6,27 @@
 {% block title %}Inicio{% endblock title %}
 
 {% block body_content %}
-    <h1>This is the music index!</h1>   
+<h1>This is the music index!</h1>
+
+<div class="rec-division">
+    <h2>Artists</h2>
+    <ul>
+        {% for artist in artists %}
+        <li>
+            <a href="{% url 'music:artist' artist.id %}">{{ artist.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="rec-division">
+    <h2>Songs</h2>
+    <ul>
+        {% for song in songs %}
+        <li>
+            {{ song.name }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div></div>
 {% endblock body_content %}

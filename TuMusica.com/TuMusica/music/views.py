@@ -35,8 +35,6 @@ class IndexView(View):
     """Music index.
 
     Showing some artists, songs, albums and playlists.
-    TODO: Show artists.
-    TODO: Show songs.
     TODO: Show albums.
     TODO: Show playlists.
     """
@@ -45,7 +43,10 @@ class IndexView(View):
 
     def get(self, request):
         """GET method."""
-        return render(request, self.template)
+        artists = Artist.objects.all()
+        songs = Song.objects.all()
+        context = {"artists": artists, "songs": songs}
+        return render(request, self.template, context)
 
 
 class TopSongsView(View):
