@@ -1,7 +1,8 @@
 """Music Views."""
 # Django
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import View
+
 # Models
 from .models import Song
 
@@ -66,4 +67,16 @@ class TopSongs(View):
             to_play = songs_to_play.first()
 
         context = {"songs": songs, "to_play": to_play}
+        return render(request, self.template, context)
+
+
+class Artist(View):
+    """Show Artist View."""
+
+    template = "music/artist.html"
+
+    def get(self, request, id):
+        """Show artist template."""
+        artist = get_object_or_404(Artist, id=id)
+        context = {"artist": artist}
         return render(request, self.template, context)
