@@ -1,3 +1,4 @@
+{% load static %}
 <h2>Songs</h2>
 <ul>
     {% for song in songs %}
@@ -11,8 +12,15 @@
             {% endfor %}
         </div>
         <div>
-            <button>Like</button>
+            <button name="like" id="like_button_{{song.id}}" onclick="toggle_song_like({{song.id}})">
+                {% if song in user.extended_user.fav_songs.all %}
+                Dislike
+                {% else %}
+                Like
+                {% endif %}
+            </button>
         </div>
     </li>
     {% endfor %}
 </ul>
+<script src="{% static 'music/js/toggle_like.js' %}"></script>

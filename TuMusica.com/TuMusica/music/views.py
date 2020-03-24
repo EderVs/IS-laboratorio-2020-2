@@ -1,7 +1,9 @@
 """Music Views."""
 # Django
 from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse
 from django.views import View
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Models
 from .models import Song, Artist
@@ -81,3 +83,19 @@ class ArtistView(View):
         artist = get_object_or_404(Artist, id=id)
         context = {"artist": artist}
         return render(request, self.template, context)
+
+
+class ToggleLikeSongAPIView(LoginRequiredMixin, View):
+    """Like song api."""
+
+    def post(self, request, id):
+        """Toggle Like of a song."""
+        song = get_object_or_404(Song, id=id)
+        response_text = ""
+        if song in request.user.extended_user.fav_songs.all():
+            request.user.extended_user.fav_songs.remove(song)
+            response_text = "Like"
+        else:
+            request.user.extended_user.fav_songs.add(song)
+            response_text = "Dislike"
+        return HttpResponse(response_text, status=200)

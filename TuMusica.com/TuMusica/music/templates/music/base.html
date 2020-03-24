@@ -13,6 +13,12 @@
     <link rel="stylesheet" type="text/css" href={% static 'music/player.css' %}>
     {% block css %}
     {% endblock css %}
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            data: { csrfmiddlewaretoken: '{{ csrf_token }}' },
+        });
+    </script>
 </head>
 
 <body>
@@ -24,6 +30,7 @@
         {% else %}
         <a href="{% url 'users:login' %}">Login</a> or <a href="{% url 'users:sign_up'%}">Sign Up</a>
         {% endif %}
+
     </header>
     {% block body_content %}
     {% endblock body_content %}
