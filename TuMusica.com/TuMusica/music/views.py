@@ -1,9 +1,12 @@
 """Music Views."""
 # Django
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse
 from django.views import View
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 # Models
-from .models import Song
+from .models import Song, Artist
 
 
 # Function-based views.
@@ -30,12 +33,10 @@ def top_songs(request):
 
 
 # Class-based views.
-class Index(View):
+class IndexView(View):
     """Music index.
 
     Showing some artists, songs, albums and playlists.
-    TODO: Show artists.
-    TODO: Show songs.
     TODO: Show albums.
     TODO: Show playlists.
     """
@@ -44,10 +45,13 @@ class Index(View):
 
     def get(self, request):
         """GET method."""
-        return render(request, self.template)
+        artists = Artist.objects.all()
+        songs = Song.objects.all()
+        context = {"artists": artists, "songs": songs}
+        return render(request, self.template, context)
 
 
-class TopSongs(View):
+class TopSongsView(View):
     """Top songs.
 
     TODO: Show songs by its popularity.
@@ -67,3 +71,31 @@ class TopSongs(View):
 
         context = {"songs": songs, "to_play": to_play}
         return render(request, self.template, context)
+
+
+class ArtistView(View):
+    """Show Artist View."""
+
+    template = "music/artist.html"
+
+    def get(self, request, id):
+        """Show artist template."""
+        artist = get_object_or_404(Artist, id=id)
+        context = {"artist": artist, "songs": artist.songs.all()}
+        return render(request, self.template, context)
+
+
+class ToggleLikeSongAPIView(LoginRequiredMixin, View):
+    """Like song api."""
+
+    def post(self, request, id):
+        """Toggle Like of a song."""
+        song = get_object_or_404(Song, id=id)
+        response_text = ""
+        if song in request.user.extended_user.fav_songs.all():
+            request.user.extended_user.fav_songs.remove(song)
+            response_text = "Like"
+        else:
+            request.user.extended_user.fav_songs.add(song)
+            response_text = "Dislike"
+        return HttpResponse(response_text, status=200)

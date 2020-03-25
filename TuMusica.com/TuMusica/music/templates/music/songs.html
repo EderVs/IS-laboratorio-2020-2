@@ -1,0 +1,27 @@
+{% load static %}
+<ul>
+    {% for song in songs %}
+    <li>
+        <div>
+            {{ song.name }}
+        </div>
+        <div>
+            {% for artist in song.artists.all %}
+            {{ artist.name }},
+            {% endfor %}
+        </div>
+        <div>
+            {% if user.is_authenticated %}
+            <button name="like" id="like_button_{{song.id}}" onclick="toggle_song_like({{song.id}})">
+                {% if song in user.extended_user.fav_songs.all %}
+                Dislike
+                {% else %}
+                Like
+                {% endif %}
+            </button>
+            {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<script src="{% static 'music/js/toggle_like.js' %}"></script>
