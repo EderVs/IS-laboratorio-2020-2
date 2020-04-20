@@ -5,3 +5,8 @@
 .mypy_cache
 media/
 db.sqlite3
+
+# Elastic Beanstalk Files
+TuMusica.com/.elasticbeanstalk/*
+TuMusica.com/!.elasticbeanstalk/*.cfg.yml
+TuMusica.com/!.elasticbeanstalk/*.global.yml
